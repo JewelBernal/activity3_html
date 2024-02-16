@@ -8,8 +8,16 @@
   src: url('../fonts/BLASTIMO SANS.ttf');
 }
 
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 p {
-  display: flex;
+  /* display: flex; */
   line-height: 1.6;
   margin: 8px;
 }
@@ -18,31 +26,65 @@ body {
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgb(0, 0, 0) 11%, rgb(121, 0, 0) 97%);
   background-size: cover;
-  margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  letter-spacing: 3%;
   color: #ffffff;
   min-height: 120vh;
+  margin: 0;
 }
 
 .header {
+  width: -webkit-fill-available;
+  backdrop-filter: blur(15px);
+  position: fixed;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: rgba(35, 35, 35, 0.5);
+  z-index: 10;
+  height: 170;
+}
+
+.maincontainer {
+  /* border: 2px solid white; */
+  display: flex;
+  border-radius: 30px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 150px;
+  margin: 0px;
+}
+
+section.extension {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30;
+}
+
+img.logovisual {
+  padding-left: 30;
+  width: 50px;
+  height: 50px;
 }
 
 .homelogo {
-  font-family: "BLASTIMO SANS";
-  letter-spacing: 20px;
-  line-height: 0.5;
-  text-align: center;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 5px;
+  line-height: 0;
   color: #ffffff;
   font-size: 78px;
+  padding: 15px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
 }
 
 .heading {
+  font-family: 'Inter', sans-serif;
   font-size: 36px;
-  font-family: "Overwave";
   letter-spacing: 10px;
   margin: 8px;
   text-align: center;
@@ -53,14 +95,16 @@ body {
 .breadcrumbs {
   display: flex;
   font-size: 36px;
-  font-family: "Overwave";
   letter-spacing: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
   margin: 8px;
   justify-content: center;
   padding: 60px 0px;
 }
 
 .breadcrumbs a {
+  font-weight: 900;
   text-decoration: none;
   color: #ffa9a9;
 }
@@ -75,6 +119,12 @@ body {
   display: flex;
   justify-content: center;
   column-gap: 77px;
+}
+
+.movieblocks {
+  padding: 40px;
+  padding-top: 140px;
+  padding-bottom: 400px;
 }
 
 .movie {
