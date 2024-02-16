@@ -1,0 +1,74 @@
+html {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  line-height: 1.6;
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+img.keyvisual {
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  filter: drop-shadow(1px 1px 10px black);
+}
+
+img.keyvisual:hover {
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+}
+
+h2.movieitem_title {
+  letter-spacing: 6px;
+}
+
+.breadcrumbsSection {
+  max-height: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 90;
+}
+
+.breadcrumbs {
+  padding-top: 90px;
+  line-height: 2;
+}
+
+.moviethumbcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  max-width: 300px;
+  gap: 110px;
+  padding-bottom: 20px;
+}
+
+.innercontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movieitems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0;
+  padding: 110;
+  padding-top: 20;
+  gap: 30px;
+}
+
+section.extension {
+  padding-top: 230px;
+}
